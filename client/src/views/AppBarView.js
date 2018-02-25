@@ -6,7 +6,7 @@ import {Redirect} from 'react-router-dom';
 class AppBarView extends Component {
   handleLogout () {
     localStorage.removeItem('token');
-    this.setState();
+    this.setState(this.state);
   }
 
   isAuthenticated () {

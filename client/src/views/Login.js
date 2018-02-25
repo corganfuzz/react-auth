@@ -18,7 +18,7 @@ class Login extends React.Component {
   }
 
   handleSuccessfulLogin () {
-    this.setState();
+    this.setState(this.state);
   }
 
   render() {

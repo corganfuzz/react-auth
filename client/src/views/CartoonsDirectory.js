@@ -40,7 +40,7 @@ class CartoonsDirectory extends Component {
         if (err) {
           this.setState({
             errorMessage: 'Cannot retrieve from server'
-          }); return err;
+          }); return;
         }
         this.setState({cartoons: res.body })
       })
