@@ -27,7 +27,7 @@ class Login extends React.Component {
     return (
       <Paper style={styles.paper}>
       {
-        isAlreadyAuthenticated ? <Redirect to={{pathname: '/app'}}/>
+        isAlreadyAuthenticated ? <Redirect to={{pathname: '/app/directory'}}/>
         : ( <div>
 
           <h2>Login</h2>

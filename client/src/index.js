@@ -11,7 +11,10 @@ import {
 } from 'react-router-dom';
 
 import Login from './views/Login';
+
 import CartoonsDirectory from './views/CartoonsDirectory';
+
+import AppBarView from './views/AppBarView'
 
 import injectTapEventPlugin from 'react-tap-event-plugin';
 
@@ -21,8 +24,9 @@ ReactDOM.render(<MuiThemeProvider>
   <Router>
     <Row around='xs'>
       <Col xs={12} md={11}>
+        <Route path="/app" component={AppBarView} />
         <Route exact path="/" component={Login} />
-        <Route exact path="/app" component={CartoonsDirectory} />
+        <Route exact path="/app/directory" component={CartoonsDirectory} />
       </Col>
     </Row>
   </Router>

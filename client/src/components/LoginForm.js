@@ -41,7 +41,7 @@ class LoginForm extends Component {
               this.setState({
                 erroMessage: "Authentication Failed"
             }); return; }
-            console.log('res.body', res.body);
+            // console.log('res.body', res.body);
               localStorage.setItem('token', res.body.token)
               this.props.onSuccessfulLogin();
     });
@@ -50,7 +50,7 @@ class LoginForm extends Component {
 
   render () {
     return (
-      <div>
+
           <form onSubmit={this.submitForm}>
             <TextField
               floatingLabelText="Username"
@@ -67,7 +67,7 @@ class LoginForm extends Component {
               label="Submit"
             />
           </form>
-      </div>
+
     );
   }
 }
